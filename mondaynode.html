@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mondaynode.css">
+</head>
+
+<body>
+
+    <div>
+        <form action="http://localhost:3000/login" method="POST">
+            Username:
+            <input name="username" type="text" placeholder="Please type your username" required><br>
+            <br>
+            Password:
+            <input name="password" type="password" placeholder="Please enter your password" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+    <div class="container contact">
+        <h1>Contact Form</h1>
+    </div>
+    <form action="http://localhost:3000/details" method="GET">
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname"> Full Name</label><span class="required">*</span>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter full name" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email"> Email Address </label><span class="required">*</span>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Enter email address" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label><span class="required">*</span>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height: 50px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> 
+                    <label for="message">Message</label><span class="required">*</span>
+                </div>
+                <div class="col-25">
+                    <textarea id="message" name="message" placeholder="Write a message.."
+                        style="height: 200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="submit" />
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
